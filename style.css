@@ -1,0 +1,20 @@
+body {
+  background: #0d1117;
+  color: #00ff9c;
+  font-family: monospace;
+  text-align: center;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  background: #161b22;
+  color: #00ff9c;
+  border: 1px solid #00ff9c;
+}
+
+.hidden { display: none; }
+
+.tabs button {
+  cursor: pointer;
+}
