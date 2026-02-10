@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSINT Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>OSINT Search</h1>
+
+<div class="tabs">
+  <button onclick="showTab('email')">Email</button>
+  <button onclick="showTab('username')">Username</button>
+  <button onclick="showTab('domain')">Dominio</button>
+  <button onclick="showTab('phone')">Telefono</button>
+</div>
+
+<div id="email" class="tab">
+  <input id="emailInput" placeholder="Inserisci email">
+  <button onclick="checkEmail()">Cerca</button>
+  <pre id="emailResult"></pre>
+</div>
+
+<div id="username" class="tab hidden">
+  <input id="userInput" placeholder="Inserisci username">
+  <button onclick="checkUsername()">Cerca</button>
+  <pre id="userResult"></pre>
+</div>
+
+<div id="domain" class="tab hidden">
+  <input id="domainInput" placeholder="Inserisci dominio">
+  <button onclick="checkDomain()">Cerca</button>
+  <pre id="domainResult"></pre>
+</div>
+
+<div id="phone" class="tab hidden">
+  <input id="phoneInput" placeholder="Inserisci numero">
+  <button onclick="checkPhone()">Cerca</button>
+  <pre id="phoneResult"></pre>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
